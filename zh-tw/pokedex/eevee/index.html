@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#101820" />
+    <meta name="color-scheme" content="dark" />
+    <title>Pokémon Survivors 的 Eevee 及其進化：招式、進化與特性</title>
+    <meta name="description" content="Eevee 在 Pokémon Survivors（免費的寶可夢割草遊戲，Vampire Survivors 風格）中的資料：能力值、進化路線、初始招式 Swift、必殺技、可學招式與特性。" />
+    <link rel="canonical" href="https://www.pokemonsurvivors.com/zh-tw/pokedex/eevee/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://www.pokemonsurvivors.com/pokedex/eevee/" />
+    <link rel="alternate" hreflang="en" href="https://www.pokemonsurvivors.com/en/pokedex/eevee/" />
+    <link rel="alternate" hreflang="es" href="https://www.pokemonsurvivors.com/es/pokedex/eevee/" />
+    <link rel="alternate" hreflang="fr" href="https://www.pokemonsurvivors.com/fr/pokedex/eevee/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://www.pokemonsurvivors.com/zh-tw/pokedex/eevee/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pokemonsurvivors.com/en/pokedex/eevee/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pokémon Survivors" />
+    <meta property="og:url" content="https://www.pokemonsurvivors.com/zh-tw/pokedex/eevee/" />
+    <meta property="og:title" content="Pokémon Survivors 的 Eevee 及其進化：招式、進化與特性" />
+    <meta property="og:description" content="Eevee 在 Pokémon Survivors（免費的寶可夢割草遊戲，Vampire Survivors 風格）中的資料：能力值、進化路線、初始招式 Swift、必殺技、可學招式與特性。" />
+    <meta property="og:image" content="https://www.pokemonsurvivors.com/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="es_LA" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+        <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/pokemon/4/portrait.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>try{var t=JSON.parse(localStorage.getItem('ps:settings')||'{}').theme;document.documentElement.dataset.theme=t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'}catch(e){}</script>
+    <style>@keyframes k0{0%{background-position-x:0%}50%{background-position-x:100%}}@keyframes k1{0%{background-position-x:0%}15.385%{background-position-x:16.667%}30.769%{background-position-x:33.333%}46.154%{background-position-x:50%}61.538%{background-position-x:66.667%}84.615%{background-position-x:83.333%}92.308%{background-position-x:100%}}@keyframes k2{0%{background-position-x:0%}78.947%{background-position-x:100%}}@keyframes k3{0%{background-position-x:0%}22.222%{background-position-x:33.333%}50%{background-position-x:66.667%}72.222%{background-position-x:100%}}@keyframes k4{0%{background-position-x:0%}21.429%{background-position-x:33.333%}50%{background-position-x:66.667%}71.429%{background-position-x:100%}}@keyframes k5{0%{background-position-x:0%}25%{background-position-x:33.333%}50%{background-position-x:66.667%}75%{background-position-x:100%}}@keyframes k6{0%{background-position-x:0%}20%{background-position-x:33.333%}50%{background-position-x:66.667%}70%{background-position-x:100%}}@keyframes k7{0%{background-position-x:0%}58.824%{background-position-x:7.692%}68.627%{background-position-x:15.385%}70.588%{background-position-x:23.077%}72.549%{background-position-x:30.769%}74.51%{background-position-x:38.462%}76.471%{background-position-x:46.154%}78.431%{background-position-x:53.846%}80.392%{background-position-x:61.538%}82.353%{background-position-x:69.231%}84.314%{background-position-x:76.923%}86.275%{background-position-x:84.615%}88.235%{background-position-x:92.308%}90.196%{background-position-x:100%}}@keyframes k8{0%{background-position-x:0%}53.571%{background-position-x:20%}62.5%{background-position-x:40%}78.571%{background-position-x:60%}87.5%{background-position-x:80%}91.071%{background-position-x:100%}}@keyframes k9{0%{background-position-x:0%}25%{background-position-x:33.333%}50%{background-position-x:66.667%}75%{background-position-x:100%}}@keyframes k10{0%{background-position-x:0%}12.5%{background-position-x:14.286%}25%{background-position-x:28.571%}37.5%{background-position-x:42.857%}50%{background-position-x:57.143%}62.5%{background-position-x:71.429%}75%{background-position-x:85.714%}87.5%{background-position-x:100%}}.s0{background-size:200% 800%;width:48px;height:64px;animation:.533s step-end infinite k0}.s1{background-size:700% 800%;width:80px;height:96px;animation:.433s step-end infinite k1}.s2{background-size:200% 800%;width:80px;height:112px;animation:1.267s step-end infinite k2}.s3{background-size:400% 800%;width:64px;height:96px;animation:.6s step-end infinite k3}.s4{background-size:200% 800%;width:64px;height:80px;animation:1.267s step-end infinite k2}.s5{background-size:400% 800%;width:64px;height:80px;animation:.6s step-end infinite k3}.s6{background-size:400% 800%;width:64px;height:80px;animation:.933s step-end infinite k4}.s7{background-size:400% 800%;width:64px;height:80px;animation:.533s step-end infinite k5}.s8{background-size:400% 800%;width:64px;height:96px;animation:.533s step-end infinite k5}.s9{background-size:400% 800%;width:64px;height:96px;animation:.667s step-end infinite k6}.s10{background-size:1400% 800%;width:48px;height:96px;animation:1.7s step-end infinite k7}.s11{background-size:600% 800%;width:64px;height:96px;animation:1.867s step-end infinite k8}.s12{background-size:400% 800%;width:64px;height:96px;animation:.667s step-end infinite k9}.s13{background-size:600% 800%;width:64px;height:80px;animation:1.867s step-end infinite k8}.s14{background-size:400% 800%;width:64px;height:80px;animation:.667s step-end infinite k9}.s15{background-size:800% 800%;width:64px;height:96px;animation:.933s step-end infinite k10}</style>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.pokemonsurvivors.com/zh-tw/pokedex/eevee/#page","url":"https://www.pokemonsurvivors.com/zh-tw/pokedex/eevee/","name":"Pokémon Survivors 的 Eevee 及其進化：招式、進化與特性","description":"Eevee 在 Pokémon Survivors（免費的寶可夢割草遊戲，Vampire Survivors 風格）中的資料：能力值、進化路線、初始招式 Swift、必殺技、可學招式與特性。","inLanguage":"zh-Hant","isPartOf":{"@id":"https://www.pokemonsurvivors.com/#website"},"about":{"@id":"https://www.pokemonsurvivors.com/#game"},"breadcrumb":{"@id":"https://www.pokemonsurvivors.com/zh-tw/pokedex/eevee/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://www.pokemonsurvivors.com/zh-tw/pokedex/eevee/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Pokémon Survivors","item":"https://www.pokemonsurvivors.com/zh-tw/"},{"@type":"ListItem","position":2,"name":"寶可夢圖鑑","item":"https://www.pokemonsurvivors.com/zh-tw/pokedex/"},{"@type":"ListItem","position":3,"name":"Eevee 及其進化","item":"https://www.pokemonsurvivors.com/zh-tw/pokedex/eevee/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"如何在 Pokémon Survivors 中解鎖 Eevee？","acceptedAnswer":{"@type":"Answer","text":"孵化普通蛋。首領、上鎖的寶箱與裂縫有時會掉落蛋，蛋會靠你在對局中走的步數在孵化器裡孵化；Eevee 孵化後就永遠是你的了。"}},{"@type":"Question","name":"Eevee 如何進化？","acceptedAnswer":{"@type":"Answer","text":"在對局中隨等級提升進化：等級 20 進化成 Vaporeon、Jolteon、Flareon、Espeon、Umbreon、Leafeon、Glaceon或Sylveon。 部分型態需要進化道具，可在 Kecleon商店購買，或從首領身上取得。"}},{"@type":"Question","name":"Eevee 的初始招式是什麼？","acceptedAnswer":{"@type":"Answer","text":"Eevee 每場對局都以 Swift 開局，這是該家族的招牌招式。其他招式會隨著升級與進化取得。"}},{"@type":"Question","name":"Eevee 在 Pokémon Survivors 裡強嗎？","acceptedAnswer":{"@type":"Answer","text":"在根據玩家對局整理的強度排行中，Eevee 是 D 級：最近 30 天在普通難度的 262 場對局裡，有 43% 打倒了 超夢。"}}]}]}</script>
+    <script type="module" crossorigin src="/assets/preload-helper-CFijIu3R.js"></script>
+    <script type="module" crossorigin src="/assets/client-CClMoRXD.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/client-D0lJg1Dg.css">
+  </head>
+  <body>
+  <a class="skip" href="#content">跳至主要內容</a>
+  <header class="site-header">
+    <a class="brand" href="/zh-tw/"><img src="/assets/pokemon/4/portrait.png" width="40" height="40" alt="" /><span>Pokémon<br />Survivors</span></a>
+    <nav class="site-nav" aria-label="主選單">
+      <a href="/zh-tw/" class="nav-play">開始玩</a><a href="/zh-tw/pokedex/" class="">寶可夢圖鑑</a><a href="/zh-tw/tier-list/" class="">強度排行</a><a href="/zh-tw/guide/" class="">攻略</a><a href="/zh-tw/changelog/" class="">更新紀錄</a><a href="/zh-tw/creators/" class="">創作者</a>
+    </nav>
+    <nav class="lang" aria-label="語言">
+      <a href="/pokedex/eevee/" hreflang="pt-BR" lang="pt-BR" data-lang="pt" title="Ver em português">PT</a><a href="/en/pokedex/eevee/" hreflang="en" lang="en" data-lang="en" title="View in English">EN</a><a href="/es/pokedex/eevee/" hreflang="es" lang="es-419" data-lang="es" title="Ver en español">ES</a><a href="/fr/pokedex/eevee/" hreflang="fr" lang="fr" data-lang="fr" title="Voir en français">FR</a><a href="/zh-tw/pokedex/eevee/" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh" aria-current="true">中文</a>
+    </nav>
+  </header>
+  <main id="content" class="site-main">
+<div class="page-head">
+    <h1>Pokémon Survivors 的 Eevee 及其進化</h1>
+    <p class="lead">Eevee 是 Pokémon Survivors 中從蛋孵化的家族之一，一般屬性。 適應力強。成長快速，有8種進化方式。</p>
+  </div>
+  <p class="cta"><a class="btn-play" href="/zh-tw/">▶ 用 Eevee 開玩</a></p>
+  <p class="dex-tier"><a href="/zh-tw/tier-list/"><span class="tier-chip tier-D">D</span> 強度排行 D 級 · 普通難度勝率 43% →</a></p>
+  <div class="dex-grid"><article class="dex-card box role-egg" id="eevee" data-region="kanto" data-types="normal" data-roles="egg" data-search="eevee 伊布 133 133">
+  <div class="card-top">
+    <span class="dex-no">#133</span>
+    <span class="role">蛋</span>
+    <span class="region">關都</span>
+    <a class="anchor" href="#eevee" aria-label="伊布 的連結">#</a>
+  </div>
+  <div class="card-art">
+    <div class="stage" role="img" aria-label="Eevee 動畫圖像"><span class="sp sp-i s0" style="background-image:url(/assets/pokemon/133/Idle.png)"></span><span class="sp sp-w s1" style="background-image:url(/assets/pokemon/133/Walk.png)"></span><span class="sp sp-si s0" style="background-image:url(/assets/pokemon/133/shiny/Idle.png)"></span><span class="sp sp-sw s1" style="background-image:url(/assets/pokemon/133/shiny/Walk.png)"></span></div>
+    <img class="portrait" src="/assets/pokemon/133/portrait.png" data-shiny-src="/assets/pokemon/133/shiny/portrait.png" width="80" height="80" loading="lazy" alt="伊布 頭像" />
+    <button class="shiny-btn" type="button" aria-pressed="false" aria-label="顯示異色 伊布" title="顯示異色 伊布">★</button>
+  </div>
+  <h2>伊布</h2>
+  <div class="types"><span class="type-badge" style="--type:#a8a878">一般</span></div>
+  <p class="blurb">第一階段 · 適應力強。成長快速，有8種進化方式。</p>
+    <p class="note">從普通蛋孵化後即可使用。</p>
+    <h3>遊戲內能力值</h3>
+    <dl class="bars"><div><dt>生命值</dt><dd><span class="bar"><i style="width:24%"></i></span><b>100</b></dd></div><div><dt>攻擊</dt><dd><span class="bar"><i style="width:29%"></i></span><b>x1.00</b></dd></div><div><dt>防禦</dt><dd><span class="bar"><i style="width:3%"></i></span><b>0</b></dd></div><div><dt>速度</dt><dd><span class="bar"><i style="width:40%"></i></span><b>68</b></dd></div><div><dt>冷卻</dt><dd><span class="bar"><i style="width:33%"></i></span><b>x1.00</b></dd></div><div><dt>範圍</dt><dd><span class="bar"><i style="width:18%"></i></span><b>x1.00</b></dd></div><div><dt>回復</dt><dd><span class="bar"><i style="width:10%"></i></span><b>0.1/s</b></dd></div></dl>
+    <h3>進化路線</h3>
+    <ol class="evo"><li><a href="#eevee" aria-current="true"><img src="/assets/pokemon/133/portrait.png" width="40" height="40" loading="lazy" alt="" />伊布</a></li><li class="evo-arrow">等級 20<br /><span aria-hidden="true">▶</span></li><li><a href="#vaporeon"><img src="/assets/pokemon/134/portrait.png" width="40" height="40" loading="lazy" alt="" />水伊布</a><a href="#jolteon"><img src="/assets/pokemon/135/portrait.png" width="40" height="40" loading="lazy" alt="" />雷伊布</a><a href="#flareon"><img src="/assets/pokemon/136/portrait.png" width="40" height="40" loading="lazy" alt="" />火伊布</a><a href="#espeon"><img src="/assets/pokemon/196/portrait.png" width="40" height="40" loading="lazy" alt="" />太陽伊布</a><a href="#umbreon"><img src="/assets/pokemon/197/portrait.png" width="40" height="40" loading="lazy" alt="" />月亮伊布</a><a href="#leafeon"><img src="/assets/pokemon/470/portrait.png" width="40" height="40" loading="lazy" alt="" />葉伊布</a><a href="#glaceon"><img src="/assets/pokemon/471/portrait.png" width="40" height="40" loading="lazy" alt="" />冰伊布</a><a href="#sylveon"><img src="/assets/pokemon/700/portrait.png" width="40" height="40" loading="lazy" alt="" />仙子伊布</a></li></ol>
+    <h3>初始招式</h3>
+    <p class="move"><b>高速星星</b> <span class="type-badge" style="--type:#a8a878">一般</span><br />必定命中的追蹤星星。</p>
+    <h3>必殺技</h3>
+    <p class="move"><b>巨聲</b> <span class="type-badge" style="--type:#a8a878">一般</span> <small>(最終進化時: 爆音波)</small><br />在你周圍發出衝擊波，把一切推開。</p>
+    <h3>可學招式</h3>
+    <dl class="learn"><dt>伊布 <small>一開始就會</small></dt><dd><ul class="chips"><li style="--type:#a8a878" title="一般">珍藏</li><li style="--type:#a8a878" title="一般">高速星星</li><li style="--type:#a8a878" title="一般">電光一閃</li><li style="--type:#705848" title="惡">咬碎</li><li style="--type:#a8a878" title="一般">自爆</li></ul></dd><dt>8 個選項 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#705898" title="幽靈">禍不單行</li></ul></dd><dt>水伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#6890f0" title="水">水槍</li><li style="--type:#6890f0" title="水">潮旋</li><li style="--type:#6890f0" title="水">鹽水</li><li style="--type:#98d8d8" title="冰">冰礫</li></ul></dd><dt>雷伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#f8d030" title="電">打雷</li><li style="--type:#f8d030" title="電">電擊波</li><li style="--type:#f8d030" title="電">電球</li><li style="--type:#a8b820" title="蟲">飛彈針</li></ul></dd><dt>火伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#f08030" title="火">火花</li><li style="--type:#f08030" title="火">火焰旋渦</li><li style="--type:#f08030" title="火">鬼火</li></ul></dd><dt>太陽伊布 <small>等級 20 · 日之石</small></dt><dd><ul class="chips"><li style="--type:#f85888" title="超能力">精神衝擊</li><li style="--type:#f85888" title="超能力">預知未來</li><li style="--type:#705898" title="幽靈">縫影</li></ul></dd><dt>月亮伊布 <small>等級 20 · 月之石</small></dt><dd><ul class="chips"><li style="--type:#705848" title="惡">欺詐</li><li style="--type:#705848" title="惡">突襲</li><li style="--type:#a040a0" title="毒">毒菱</li></ul></dd><dt>葉伊布 <small>等級 20 · 葉之石</small></dt><dd><ul class="chips"><li style="--type:#78c850" title="草">葉刃</li><li style="--type:#78c850" title="草">飛葉快刀</li><li style="--type:#78c850" title="草">藤鞭</li></ul></dd><dt>冰伊布 <small>等級 20 · 冰之石</small></dt><dd><ul class="chips"><li style="--type:#98d8d8" title="冰">冰礫</li><li style="--type:#98d8d8" title="冰">絕對零度</li><li style="--type:#6890f0" title="水">潮旋</li></ul></dd><dt>仙子伊布 <small>等級 20 · 光之石</small></dt><dd><ul class="chips"><li style="--type:#ee99ac" title="妖精">魅惑之聲</li><li style="--type:#f85888" title="超能力">精神衝擊</li><li style="--type:#f85888" title="超能力">預知未來</li></ul></dd></dl>
+    <h3>特性</h3>
+    <ul class="list"><li><b>適應力</b>: 與自身屬性相同的招式傷害+25%。</li><li><b>同步</b>: 異常狀態機率+6%，且異常狀態效果增強20%。</li><li><b>撿拾</b> <small>(隱藏特性)</small>: 擊倒敵人時有時會留下 橙橙果。</li></ul>
+    <p class="note">在第一次進化時選擇一個（不會進化的寶可夢在 等級 12 時選擇）。隱藏特性是原作中最稀有的。</p>
+    
+</article><article class="dex-card box role-egg" id="vaporeon" data-region="kanto" data-types="water" data-roles="egg" data-search="vaporeon 水伊布 134 134">
+  <div class="card-top">
+    <span class="dex-no">#134</span>
+    <span class="role">蛋</span>
+    <span class="region">關都</span>
+    <a class="anchor" href="#vaporeon" aria-label="水伊布 的連結">#</a>
+  </div>
+  <div class="card-art">
+    <div class="stage" role="img" aria-label="Vaporeon 動畫圖像"><span class="sp sp-i s2" style="background-image:url(/assets/pokemon/134/Idle.png)"></span><span class="sp sp-w s3" style="background-image:url(/assets/pokemon/134/Walk.png)"></span><span class="sp sp-si s2" style="background-image:url(/assets/pokemon/134/shiny/Idle.png)"></span><span class="sp sp-sw s3" style="background-image:url(/assets/pokemon/134/shiny/Walk.png)"></span></div>
+    <img class="portrait" src="/assets/pokemon/134/portrait.png" data-shiny-src="/assets/pokemon/134/shiny/portrait.png" width="80" height="80" loading="lazy" alt="水伊布 頭像" />
+    <button class="shiny-btn" type="button" aria-pressed="false" aria-label="顯示異色 水伊布" title="顯示異色 水伊布">★</button>
+  </div>
+  <h2>水伊布</h2>
+  <div class="types"><span class="type-badge" style="--type:#6890f0">水</span></div>
+  <p class="blurb">最終進化 · 適應力強。成長快速，有8種進化方式。</p>
+    <p class="note">從普通蛋孵化後即可使用。</p>
+    <h3>遊戲內能力值</h3>
+    <dl class="bars"><div><dt>生命值</dt><dd><span class="bar"><i style="width:67%"></i></span><b>190</b></dd></div><div><dt>攻擊</dt><dd><span class="bar"><i style="width:46%"></i></span><b>x1.12</b></dd></div><div><dt>防禦</dt><dd><span class="bar"><i style="width:20%"></i></span><b>1</b></dd></div><div><dt>速度</dt><dd><span class="bar"><i style="width:40%"></i></span><b>68</b></dd></div><div><dt>冷卻</dt><dd><span class="bar"><i style="width:33%"></i></span><b>x1.00</b></dd></div><div><dt>範圍</dt><dd><span class="bar"><i style="width:18%"></i></span><b>x1.00</b></dd></div><div><dt>回復</dt><dd><span class="bar"><i style="width:37%"></i></span><b>0.6/s</b></dd></div></dl>
+    <h3>進化路線</h3>
+    <ol class="evo"><li><a href="#eevee"><img src="/assets/pokemon/133/portrait.png" width="40" height="40" loading="lazy" alt="" />伊布</a></li><li class="evo-arrow">等級 20<br /><span aria-hidden="true">▶</span></li><li><a href="#vaporeon" aria-current="true"><img src="/assets/pokemon/134/portrait.png" width="40" height="40" loading="lazy" alt="" />水伊布</a><a href="#jolteon"><img src="/assets/pokemon/135/portrait.png" width="40" height="40" loading="lazy" alt="" />雷伊布</a><a href="#flareon"><img src="/assets/pokemon/136/portrait.png" width="40" height="40" loading="lazy" alt="" />火伊布</a><a href="#espeon"><img src="/assets/pokemon/196/portrait.png" width="40" height="40" loading="lazy" alt="" />太陽伊布</a><a href="#umbreon"><img src="/assets/pokemon/197/portrait.png" width="40" height="40" loading="lazy" alt="" />月亮伊布</a><a href="#leafeon"><img src="/assets/pokemon/470/portrait.png" width="40" height="40" loading="lazy" alt="" />葉伊布</a><a href="#glaceon"><img src="/assets/pokemon/471/portrait.png" width="40" height="40" loading="lazy" alt="" />冰伊布</a><a href="#sylveon"><img src="/assets/pokemon/700/portrait.png" width="40" height="40" loading="lazy" alt="" />仙子伊布</a></li></ol>
+    <h3>初始招式</h3>
+    <p class="move"><b>高速星星</b> <span class="type-badge" style="--type:#a8a878">一般</span><br />必定命中的追蹤星星。</p>
+    <h3>必殺技</h3>
+    <p class="move"><b>加農水炮</b> <span class="type-badge" style="--type:#6890f0">水</span><br />朝你移動的方向發射集中的強力水砲。</p>
+    <h3>可學招式</h3>
+    <dl class="learn"><dt>伊布 <small>一開始就會</small></dt><dd><ul class="chips"><li style="--type:#a8a878" title="一般">珍藏</li><li style="--type:#a8a878" title="一般">高速星星</li><li style="--type:#a8a878" title="一般">電光一閃</li><li style="--type:#705848" title="惡">咬碎</li><li style="--type:#a8a878" title="一般">自爆</li></ul></dd><dt>水伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#705898" title="幽靈">禍不單行</li><li style="--type:#6890f0" title="水">水槍</li><li style="--type:#6890f0" title="水">潮旋</li><li style="--type:#6890f0" title="水">鹽水</li><li style="--type:#98d8d8" title="冰">冰礫</li></ul></dd></dl>
+    <h3>特性</h3>
+    <ul class="list"><li><b>儲水</b>: 水屬性攻擊會回復你的生命值，而不是造成傷害。</li><li><b>雨盤</b>: 下雨時：每秒回復1.5 生命值。</li><li><b>濕潤之軀</b> <small>(隱藏特性)</small>: 下雨時：每秒回復0.6 生命值，且受到的傷害減少15%。</li></ul>
+    <p class="note">在第一次進化時選擇一個（不會進化的寶可夢在 等級 12 時選擇）。隱藏特性是原作中最稀有的。</p>
+    <h3>出現時機</h3><ul class="list"><li>可能加入獸群，從 10:00 到最後</li></ul>
+</article><article class="dex-card box role-egg" id="jolteon" data-region="kanto" data-types="electric" data-roles="egg" data-search="jolteon 雷伊布 135 135">
+  <div class="card-top">
+    <span class="dex-no">#135</span>
+    <span class="role">蛋</span>
+    <span class="region">關都</span>
+    <a class="anchor" href="#jolteon" aria-label="雷伊布 的連結">#</a>
+  </div>
+  <div class="card-art">
+    <div class="stage" role="img" aria-label="Jolteon 動畫圖像"><span class="sp sp-i s4" style="background-image:url(/assets/pokemon/135/Idle.png)"></span><span class="sp sp-w s5" style="background-image:url(/assets/pokemon/135/Walk.png)"></span><span class="sp sp-si s4" style="background-image:url(/assets/pokemon/135/shiny/Idle.png)"></span><span class="sp sp-sw s5" style="background-image:url(/assets/pokemon/135/shiny/Walk.png)"></span></div>
+    <img class="portrait" src="/assets/pokemon/135/portrait.png" data-shiny-src="/assets/pokemon/135/shiny/portrait.png" width="80" height="80" loading="lazy" alt="雷伊布 頭像" />
+    <button class="shiny-btn" type="button" aria-pressed="false" aria-label="顯示異色 雷伊布" title="顯示異色 雷伊布">★</button>
+  </div>
+  <h2>雷伊布</h2>
+  <div class="types"><span class="type-badge" style="--type:#f8d030">電</span></div>
+  <p class="blurb">最終進化 · 適應力強。成長快速，有8種進化方式。</p>
+    <p class="note">從普通蛋孵化後即可使用。</p>
+    <h3>遊戲內能力值</h3>
+    <dl class="bars"><div><dt>生命值</dt><dd><span class="bar"><i style="width:43%"></i></span><b>140</b></dd></div><div><dt>攻擊</dt><dd><span class="bar"><i style="width:54%"></i></span><b>x1.18</b></dd></div><div><dt>防禦</dt><dd><span class="bar"><i style="width:3%"></i></span><b>0</b></dd></div><div><dt>速度</dt><dd><span class="bar"><i style="width:62%"></i></span><b>78</b></dd></div><div><dt>冷卻</dt><dd><span class="bar"><i style="width:62%"></i></span><b>x0.92</b></dd></div><div><dt>範圍</dt><dd><span class="bar"><i style="width:18%"></i></span><b>x1.00</b></dd></div><div><dt>回復</dt><dd><span class="bar"><i style="width:10%"></i></span><b>0.1/s</b></dd></div></dl>
+    <h3>進化路線</h3>
+    <ol class="evo"><li><a href="#eevee"><img src="/assets/pokemon/133/portrait.png" width="40" height="40" loading="lazy" alt="" />伊布</a></li><li class="evo-arrow">等級 20<br /><span aria-hidden="true">▶</span></li><li><a href="#vaporeon"><img src="/assets/pokemon/134/portrait.png" width="40" height="40" loading="lazy" alt="" />水伊布</a><a href="#jolteon" aria-current="true"><img src="/assets/pokemon/135/portrait.png" width="40" height="40" loading="lazy" alt="" />雷伊布</a><a href="#flareon"><img src="/assets/pokemon/136/portrait.png" width="40" height="40" loading="lazy" alt="" />火伊布</a><a href="#espeon"><img src="/assets/pokemon/196/portrait.png" width="40" height="40" loading="lazy" alt="" />太陽伊布</a><a href="#umbreon"><img src="/assets/pokemon/197/portrait.png" width="40" height="40" loading="lazy" alt="" />月亮伊布</a><a href="#leafeon"><img src="/assets/pokemon/470/portrait.png" width="40" height="40" loading="lazy" alt="" />葉伊布</a><a href="#glaceon"><img src="/assets/pokemon/471/portrait.png" width="40" height="40" loading="lazy" alt="" />冰伊布</a><a href="#sylveon"><img src="/assets/pokemon/700/portrait.png" width="40" height="40" loading="lazy" alt="" />仙子伊布</a></li></ol>
+    <h3>初始招式</h3>
+    <p class="move"><b>高速星星</b> <span class="type-badge" style="--type:#a8a878">一般</span><br />必定命中的追蹤星星。</p>
+    <h3>必殺技</h3>
+    <p class="move"><b>雷擊</b> <span class="type-badge" style="--type:#f8d030">電</span><br />雷電劈向最近的敵人，可能使其麻痺。</p>
+    <h3>可學招式</h3>
+    <dl class="learn"><dt>伊布 <small>一開始就會</small></dt><dd><ul class="chips"><li style="--type:#a8a878" title="一般">珍藏</li><li style="--type:#a8a878" title="一般">高速星星</li><li style="--type:#a8a878" title="一般">電光一閃</li><li style="--type:#705848" title="惡">咬碎</li><li style="--type:#a8a878" title="一般">自爆</li></ul></dd><dt>雷伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#705898" title="幽靈">禍不單行</li><li style="--type:#f8d030" title="電">打雷</li><li style="--type:#f8d030" title="電">電擊波</li><li style="--type:#f8d030" title="電">電球</li><li style="--type:#a8b820" title="蟲">飛彈針</li></ul></dd></dl>
+    <h3>特性</h3>
+    <ul class="list"><li><b>蓄電</b>: 電屬性攻擊會回復你的生命值，而不是造成傷害。</li><li><b>靜電</b>: 接觸你的敵人可能陷入麻痺。</li><li><b>飛毛腿</b> <small>(隱藏特性)</small>: 生命值低於一半時，速度+16、冷卻−10%。</li></ul>
+    <p class="note">在第一次進化時選擇一個（不會進化的寶可夢在 等級 12 時選擇）。隱藏特性是原作中最稀有的。</p>
+    <h3>出現時機</h3><ul class="list"><li>可能加入獸群，從 10:00 到最後</li></ul>
+</article><article class="dex-card box role-egg" id="flareon" data-region="kanto" data-types="fire" data-roles="egg" data-search="flareon 火伊布 136 136">
+  <div class="card-top">
+    <span class="dex-no">#136</span>
+    <span class="role">蛋</span>
+    <span class="region">關都</span>
+    <a class="anchor" href="#flareon" aria-label="火伊布 的連結">#</a>
+  </div>
+  <div class="card-art">
+    <div class="stage" role="img" aria-label="Flareon 動畫圖像"><span class="sp sp-i s6" style="background-image:url(/assets/pokemon/136/Idle.png)"></span><span class="sp sp-w s7" style="background-image:url(/assets/pokemon/136/Walk.png)"></span><span class="sp sp-si s6" style="background-image:url(/assets/pokemon/136/shiny/Idle.png)"></span><span class="sp sp-sw s7" style="background-image:url(/assets/pokemon/136/shiny/Walk.png)"></span></div>
+    <img class="portrait" src="/assets/pokemon/136/portrait.png" data-shiny-src="/assets/pokemon/136/shiny/portrait.png" width="80" height="80" loading="lazy" alt="火伊布 頭像" />
+    <button class="shiny-btn" type="button" aria-pressed="false" aria-label="顯示異色 火伊布" title="顯示異色 火伊布">★</button>
+  </div>
+  <h2>火伊布</h2>
+  <div class="types"><span class="type-badge" style="--type:#f08030">火</span></div>
+  <p class="blurb">最終進化 · 適應力強。成長快速，有8種進化方式。</p>
+    <p class="note">從普通蛋孵化後即可使用。</p>
+    <h3>遊戲內能力值</h3>
+    <dl class="bars"><div><dt>生命值</dt><dd><span class="bar"><i style="width:48%"></i></span><b>150</b></dd></div><div><dt>攻擊</dt><dd><span class="bar"><i style="width:71%"></i></span><b>x1.30</b></dd></div><div><dt>防禦</dt><dd><span class="bar"><i style="width:3%"></i></span><b>0</b></dd></div><div><dt>速度</dt><dd><span class="bar"><i style="width:40%"></i></span><b>68</b></dd></div><div><dt>冷卻</dt><dd><span class="bar"><i style="width:33%"></i></span><b>x1.00</b></dd></div><div><dt>範圍</dt><dd><span class="bar"><i style="width:18%"></i></span><b>x1.00</b></dd></div><div><dt>回復</dt><dd><span class="bar"><i style="width:10%"></i></span><b>0.1/s</b></dd></div></dl>
+    <h3>進化路線</h3>
+    <ol class="evo"><li><a href="#eevee"><img src="/assets/pokemon/133/portrait.png" width="40" height="40" loading="lazy" alt="" />伊布</a></li><li class="evo-arrow">等級 20<br /><span aria-hidden="true">▶</span></li><li><a href="#vaporeon"><img src="/assets/pokemon/134/portrait.png" width="40" height="40" loading="lazy" alt="" />水伊布</a><a href="#jolteon"><img src="/assets/pokemon/135/portrait.png" width="40" height="40" loading="lazy" alt="" />雷伊布</a><a href="#flareon" aria-current="true"><img src="/assets/pokemon/136/portrait.png" width="40" height="40" loading="lazy" alt="" />火伊布</a><a href="#espeon"><img src="/assets/pokemon/196/portrait.png" width="40" height="40" loading="lazy" alt="" />太陽伊布</a><a href="#umbreon"><img src="/assets/pokemon/197/portrait.png" width="40" height="40" loading="lazy" alt="" />月亮伊布</a><a href="#leafeon"><img src="/assets/pokemon/470/portrait.png" width="40" height="40" loading="lazy" alt="" />葉伊布</a><a href="#glaceon"><img src="/assets/pokemon/471/portrait.png" width="40" height="40" loading="lazy" alt="" />冰伊布</a><a href="#sylveon"><img src="/assets/pokemon/700/portrait.png" width="40" height="40" loading="lazy" alt="" />仙子伊布</a></li></ol>
+    <h3>初始招式</h3>
+    <p class="move"><b>高速星星</b> <span class="type-badge" style="--type:#a8a878">一般</span><br />必定命中的追蹤星星。</p>
+    <h3>必殺技</h3>
+    <p class="move"><b>爆炸烈焰</b> <span class="type-badge" style="--type:#f08030">火</span><br />帶著火焰衝鋒，留下一道火焰軌跡。</p>
+    <h3>可學招式</h3>
+    <dl class="learn"><dt>伊布 <small>一開始就會</small></dt><dd><ul class="chips"><li style="--type:#a8a878" title="一般">珍藏</li><li style="--type:#a8a878" title="一般">高速星星</li><li style="--type:#a8a878" title="一般">電光一閃</li><li style="--type:#705848" title="惡">咬碎</li><li style="--type:#a8a878" title="一般">自爆</li></ul></dd><dt>火伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#705898" title="幽靈">禍不單行</li><li style="--type:#f08030" title="火">火花</li><li style="--type:#f08030" title="火">火焰旋渦</li><li style="--type:#f08030" title="火">鬼火</li></ul></dd></dl>
+    <h3>特性</h3>
+    <ul class="list"><li><b>引火</b>: 受到的火屬性傷害減少60%，且火屬性招式+15%。</li><li><b>火焰之軀</b>: 接觸你的敵人可能陷入灼傷。</li><li><b>毅力</b> <small>(隱藏特性)</small>: 生命值低於一半時，招式+35%。</li></ul>
+    <p class="note">在第一次進化時選擇一個（不會進化的寶可夢在 等級 12 時選擇）。隱藏特性是原作中最稀有的。</p>
+    <h3>出現時機</h3><ul class="list"><li>可能加入獸群，從 10:00 到最後</li></ul>
+</article><article class="dex-card box role-egg" id="espeon" data-region="johto" data-types="psychic" data-roles="egg" data-search="espeon 太陽伊布 196 196">
+  <div class="card-top">
+    <span class="dex-no">#196</span>
+    <span class="role">蛋</span>
+    <span class="region">城都</span>
+    <a class="anchor" href="#espeon" aria-label="太陽伊布 的連結">#</a>
+  </div>
+  <div class="card-art">
+    <div class="stage" role="img" aria-label="Espeon 動畫圖像"><span class="sp sp-i s8" style="background-image:url(/assets/pokemon/196/Idle.png)"></span><span class="sp sp-w s9" style="background-image:url(/assets/pokemon/196/Walk.png)"></span><span class="sp sp-si s8" style="background-image:url(/assets/pokemon/196/shiny/Idle.png)"></span><span class="sp sp-sw s9" style="background-image:url(/assets/pokemon/196/shiny/Walk.png)"></span></div>
+    <img class="portrait" src="/assets/pokemon/196/portrait.png" data-shiny-src="/assets/pokemon/196/shiny/portrait.png" width="80" height="80" loading="lazy" alt="太陽伊布 頭像" />
+    <button class="shiny-btn" type="button" aria-pressed="false" aria-label="顯示異色 太陽伊布" title="顯示異色 太陽伊布">★</button>
+  </div>
+  <h2>太陽伊布</h2>
+  <div class="types"><span class="type-badge" style="--type:#f85888">超能力</span></div>
+  <p class="blurb">最終進化 · 適應力強。成長快速，有8種進化方式。</p>
+    <p class="note">從普通蛋孵化後即可使用。</p>
+    <h3>遊戲內能力值</h3>
+    <dl class="bars"><div><dt>生命值</dt><dd><span class="bar"><i style="width:45%"></i></span><b>145</b></dd></div><div><dt>攻擊</dt><dd><span class="bar"><i style="width:57%"></i></span><b>x1.20</b></dd></div><div><dt>防禦</dt><dd><span class="bar"><i style="width:3%"></i></span><b>0</b></dd></div><div><dt>速度</dt><dd><span class="bar"><i style="width:40%"></i></span><b>68</b></dd></div><div><dt>冷卻</dt><dd><span class="bar"><i style="width:55%"></i></span><b>x0.94</b></dd></div><div><dt>範圍</dt><dd><span class="bar"><i style="width:36%"></i></span><b>x1.10</b></dd></div><div><dt>回復</dt><dd><span class="bar"><i style="width:10%"></i></span><b>0.1/s</b></dd></div></dl>
+    <h3>進化路線</h3>
+    <ol class="evo"><li><a href="#eevee"><img src="/assets/pokemon/133/portrait.png" width="40" height="40" loading="lazy" alt="" />伊布</a></li><li class="evo-arrow">等級 20<br /><span aria-hidden="true">▶</span></li><li><a href="#vaporeon"><img src="/assets/pokemon/134/portrait.png" width="40" height="40" loading="lazy" alt="" />水伊布</a><a href="#jolteon"><img src="/assets/pokemon/135/portrait.png" width="40" height="40" loading="lazy" alt="" />雷伊布</a><a href="#flareon"><img src="/assets/pokemon/136/portrait.png" width="40" height="40" loading="lazy" alt="" />火伊布</a><a href="#espeon" aria-current="true"><img src="/assets/pokemon/196/portrait.png" width="40" height="40" loading="lazy" alt="" />太陽伊布</a><a href="#umbreon"><img src="/assets/pokemon/197/portrait.png" width="40" height="40" loading="lazy" alt="" />月亮伊布</a><a href="#leafeon"><img src="/assets/pokemon/470/portrait.png" width="40" height="40" loading="lazy" alt="" />葉伊布</a><a href="#glaceon"><img src="/assets/pokemon/471/portrait.png" width="40" height="40" loading="lazy" alt="" />冰伊布</a><a href="#sylveon"><img src="/assets/pokemon/700/portrait.png" width="40" height="40" loading="lazy" alt="" />仙子伊布</a></li></ol>
+    <h3>初始招式</h3>
+    <p class="move"><b>高速星星</b> <span class="type-badge" style="--type:#a8a878">一般</span><br />必定命中的追蹤星星。</p>
+    <h3>必殺技</h3>
+    <p class="move"><b>廣域戰力</b> <span class="type-badge" style="--type:#f85888">超能力</span><br />在你周圍放出超能力波動，推開並減緩敵人。</p>
+    <h3>可學招式</h3>
+    <dl class="learn"><dt>伊布 <small>一開始就會</small></dt><dd><ul class="chips"><li style="--type:#a8a878" title="一般">珍藏</li><li style="--type:#a8a878" title="一般">高速星星</li><li style="--type:#a8a878" title="一般">電光一閃</li><li style="--type:#705848" title="惡">咬碎</li><li style="--type:#a8a878" title="一般">自爆</li></ul></dd><dt>太陽伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#705898" title="幽靈">禍不單行</li><li style="--type:#f85888" title="超能力">精神衝擊</li><li style="--type:#f85888" title="超能力">預知未來</li><li style="--type:#705898" title="幽靈">縫影</li></ul></dd></dl>
+    <h3>特性</h3>
+    <ul class="list"><li><b>同步</b>: 異常狀態機率+6%，且異常狀態效果增強20%。</li><li><b>天恩</b>: 每個招式的異常狀態機率+10%。</li><li><b>魔法鏡</b> <small>(隱藏特性)</small>: 每12秒擋下一次攻擊，並以兩倍威力反彈給接觸你的敵人。</li></ul>
+    <p class="note">在第一次進化時選擇一個（不會進化的寶可夢在 等級 12 時選擇）。隱藏特性是原作中最稀有的。</p>
+    <h3>出現時機</h3><ul class="list"><li>可能加入獸群，從 10:00 到最後</li></ul>
+</article><article class="dex-card box role-egg" id="umbreon" data-region="johto" data-types="dark" data-roles="egg" data-search="umbreon 月亮伊布 197 197">
+  <div class="card-top">
+    <span class="dex-no">#197</span>
+    <span class="role">蛋</span>
+    <span class="region">城都</span>
+    <a class="anchor" href="#umbreon" aria-label="月亮伊布 的連結">#</a>
+  </div>
+  <div class="card-art">
+    <div class="stage" role="img" aria-label="Umbreon 動畫圖像"><span class="sp sp-i s10" style="background-image:url(/assets/pokemon/197/Idle.png)"></span><span class="sp sp-w s7" style="background-image:url(/assets/pokemon/197/Walk.png)"></span><span class="sp sp-si s10" style="background-image:url(/assets/pokemon/197/shiny/Idle.png)"></span><span class="sp sp-sw s7" style="background-image:url(/assets/pokemon/197/shiny/Walk.png)"></span></div>
+    <img class="portrait" src="/assets/pokemon/197/portrait.png" data-shiny-src="/assets/pokemon/197/shiny/portrait.png" width="80" height="80" loading="lazy" alt="月亮伊布 頭像" />
+    <button class="shiny-btn" type="button" aria-pressed="false" aria-label="顯示異色 月亮伊布" title="顯示異色 月亮伊布">★</button>
+  </div>
+  <h2>月亮伊布</h2>
+  <div class="types"><span class="type-badge" style="--type:#705848">惡</span></div>
+  <p class="blurb">最終進化 · 適應力強。成長快速，有8種進化方式。</p>
+    <p class="note">從普通蛋孵化後即可使用。</p>
+    <h3>遊戲內能力值</h3>
+    <dl class="bars"><div><dt>生命值</dt><dd><span class="bar"><i style="width:52%"></i></span><b>160</b></dd></div><div><dt>攻擊</dt><dd><span class="bar"><i style="width:57%"></i></span><b>x1.20</b></dd></div><div><dt>防禦</dt><dd><span class="bar"><i style="width:40%"></i></span><b>2</b></dd></div><div><dt>速度</dt><dd><span class="bar"><i style="width:40%"></i></span><b>68</b></dd></div><div><dt>冷卻</dt><dd><span class="bar"><i style="width:33%"></i></span><b>x1.00</b></dd></div><div><dt>範圍</dt><dd><span class="bar"><i style="width:18%"></i></span><b>x1.00</b></dd></div><div><dt>回復</dt><dd><span class="bar"><i style="width:37%"></i></span><b>0.6/s</b></dd></div></dl>
+    <h3>進化路線</h3>
+    <ol class="evo"><li><a href="#eevee"><img src="/assets/pokemon/133/portrait.png" width="40" height="40" loading="lazy" alt="" />伊布</a></li><li class="evo-arrow">等級 20<br /><span aria-hidden="true">▶</span></li><li><a href="#vaporeon"><img src="/assets/pokemon/134/portrait.png" width="40" height="40" loading="lazy" alt="" />水伊布</a><a href="#jolteon"><img src="/assets/pokemon/135/portrait.png" width="40" height="40" loading="lazy" alt="" />雷伊布</a><a href="#flareon"><img src="/assets/pokemon/136/portrait.png" width="40" height="40" loading="lazy" alt="" />火伊布</a><a href="#espeon"><img src="/assets/pokemon/196/portrait.png" width="40" height="40" loading="lazy" alt="" />太陽伊布</a><a href="#umbreon" aria-current="true"><img src="/assets/pokemon/197/portrait.png" width="40" height="40" loading="lazy" alt="" />月亮伊布</a><a href="#leafeon"><img src="/assets/pokemon/470/portrait.png" width="40" height="40" loading="lazy" alt="" />葉伊布</a><a href="#glaceon"><img src="/assets/pokemon/471/portrait.png" width="40" height="40" loading="lazy" alt="" />冰伊布</a><a href="#sylveon"><img src="/assets/pokemon/700/portrait.png" width="40" height="40" loading="lazy" alt="" />仙子伊布</a></li></ol>
+    <h3>初始招式</h3>
+    <p class="move"><b>高速星星</b> <span class="type-badge" style="--type:#a8a878">一般</span><br />必定命中的追蹤星星。</p>
+    <h3>必殺技</h3>
+    <p class="move"><b>暗黑爆破</b> <span class="type-badge" style="--type:#705848">惡</span><br />在你周圍放出黑暗波動，推開敵人，可能使其睡著。</p>
+    <h3>可學招式</h3>
+    <dl class="learn"><dt>伊布 <small>一開始就會</small></dt><dd><ul class="chips"><li style="--type:#a8a878" title="一般">珍藏</li><li style="--type:#a8a878" title="一般">高速星星</li><li style="--type:#a8a878" title="一般">電光一閃</li><li style="--type:#705848" title="惡">咬碎</li><li style="--type:#a8a878" title="一般">自爆</li></ul></dd><dt>月亮伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#705898" title="幽靈">禍不單行</li><li style="--type:#705848" title="惡">欺詐</li><li style="--type:#705848" title="惡">突襲</li><li style="--type:#a040a0" title="毒">毒菱</li></ul></dd></dl>
+    <h3>特性</h3>
+    <ul class="list"><li><b>同步</b>: 異常狀態機率+6%，且異常狀態效果增強20%。</li><li><b>緊張感</b>: 70 px 內的敵人速度降低25%。</li><li><b>精神力</b> <small>(隱藏特性)</small>: 必殺技每擊倒一個敵人，其冷卻縮短0.25秒。</li></ul>
+    <p class="note">在第一次進化時選擇一個（不會進化的寶可夢在 等級 12 時選擇）。隱藏特性是原作中最稀有的。</p>
+    
+</article><article class="dex-card box role-egg" id="leafeon" data-region="sinnoh" data-types="grass" data-roles="egg" data-search="leafeon 葉伊布 470 470">
+  <div class="card-top">
+    <span class="dex-no">#470</span>
+    <span class="role">蛋</span>
+    <span class="region">神奧</span>
+    <a class="anchor" href="#leafeon" aria-label="葉伊布 的連結">#</a>
+  </div>
+  <div class="card-art">
+    <div class="stage" role="img" aria-label="Leafeon 動畫圖像"><span class="sp sp-i s11" style="background-image:url(/assets/pokemon/470/Idle.png)"></span><span class="sp sp-w s12" style="background-image:url(/assets/pokemon/470/Walk.png)"></span><span class="sp sp-si s11" style="background-image:url(/assets/pokemon/470/shiny/Idle.png)"></span><span class="sp sp-sw s12" style="background-image:url(/assets/pokemon/470/shiny/Walk.png)"></span></div>
+    <img class="portrait" src="/assets/pokemon/470/portrait.png" data-shiny-src="/assets/pokemon/470/shiny/portrait.png" width="80" height="80" loading="lazy" alt="葉伊布 頭像" />
+    <button class="shiny-btn" type="button" aria-pressed="false" aria-label="顯示異色 葉伊布" title="顯示異色 葉伊布">★</button>
+  </div>
+  <h2>葉伊布</h2>
+  <div class="types"><span class="type-badge" style="--type:#78c850">草</span></div>
+  <p class="blurb">最終進化 · 適應力強。成長快速，有8種進化方式。</p>
+    <p class="note">從普通蛋孵化後即可使用。</p>
+    <h3>遊戲內能力值</h3>
+    <dl class="bars"><div><dt>生命值</dt><dd><span class="bar"><i style="width:50%"></i></span><b>155</b></dd></div><div><dt>攻擊</dt><dd><span class="bar"><i style="width:60%"></i></span><b>x1.22</b></dd></div><div><dt>防禦</dt><dd><span class="bar"><i style="width:40%"></i></span><b>2</b></dd></div><div><dt>速度</dt><dd><span class="bar"><i style="width:40%"></i></span><b>68</b></dd></div><div><dt>冷卻</dt><dd><span class="bar"><i style="width:33%"></i></span><b>x1.00</b></dd></div><div><dt>範圍</dt><dd><span class="bar"><i style="width:18%"></i></span><b>x1.00</b></dd></div><div><dt>回復</dt><dd><span class="bar"><i style="width:10%"></i></span><b>0.1/s</b></dd></div></dl>
+    <h3>進化路線</h3>
+    <ol class="evo"><li><a href="#eevee"><img src="/assets/pokemon/133/portrait.png" width="40" height="40" loading="lazy" alt="" />伊布</a></li><li class="evo-arrow">等級 20<br /><span aria-hidden="true">▶</span></li><li><a href="#vaporeon"><img src="/assets/pokemon/134/portrait.png" width="40" height="40" loading="lazy" alt="" />水伊布</a><a href="#jolteon"><img src="/assets/pokemon/135/portrait.png" width="40" height="40" loading="lazy" alt="" />雷伊布</a><a href="#flareon"><img src="/assets/pokemon/136/portrait.png" width="40" height="40" loading="lazy" alt="" />火伊布</a><a href="#espeon"><img src="/assets/pokemon/196/portrait.png" width="40" height="40" loading="lazy" alt="" />太陽伊布</a><a href="#umbreon"><img src="/assets/pokemon/197/portrait.png" width="40" height="40" loading="lazy" alt="" />月亮伊布</a><a href="#leafeon" aria-current="true"><img src="/assets/pokemon/470/portrait.png" width="40" height="40" loading="lazy" alt="" />葉伊布</a><a href="#glaceon"><img src="/assets/pokemon/471/portrait.png" width="40" height="40" loading="lazy" alt="" />冰伊布</a><a href="#sylveon"><img src="/assets/pokemon/700/portrait.png" width="40" height="40" loading="lazy" alt="" />仙子伊布</a></li></ol>
+    <h3>初始招式</h3>
+    <p class="move"><b>高速星星</b> <span class="type-badge" style="--type:#a8a878">一般</span><br />必定命中的追蹤星星。</p>
+    <h3>必殺技</h3>
+    <p class="move"><b>瘋狂植物</b> <span class="type-badge" style="--type:#78c850">草</span><br />一圈圈樹根從地面竄出，減緩敵人。</p>
+    <h3>可學招式</h3>
+    <dl class="learn"><dt>伊布 <small>一開始就會</small></dt><dd><ul class="chips"><li style="--type:#a8a878" title="一般">珍藏</li><li style="--type:#a8a878" title="一般">高速星星</li><li style="--type:#a8a878" title="一般">電光一閃</li><li style="--type:#705848" title="惡">咬碎</li><li style="--type:#a8a878" title="一般">自爆</li></ul></dd><dt>葉伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#705898" title="幽靈">禍不單行</li><li style="--type:#78c850" title="草">葉刃</li><li style="--type:#78c850" title="草">飛葉快刀</li><li style="--type:#78c850" title="草">藤鞭</li></ul></dd></dl>
+    <h3>特性</h3>
+    <ul class="list"><li><b>葉子防守</b>: 大晴天時：受到的傷害減少30%，每秒回復0.5 生命值。</li><li><b>鋒銳</b>: 切割類招式及其進化招式傷害+35%（Leaf Blade、Razor Shell、Aqua Cutter、Sacred Sword…）。</li><li><b>葉綠素</b> <small>(隱藏特性)</small>: 大晴天時：速度+18、冷卻−8%。</li></ul>
+    <p class="note">在第一次進化時選擇一個（不會進化的寶可夢在 等級 12 時選擇）。隱藏特性是原作中最稀有的。</p>
+    
+</article><article class="dex-card box role-egg" id="glaceon" data-region="sinnoh" data-types="ice" data-roles="egg" data-search="glaceon 冰伊布 471 471">
+  <div class="card-top">
+    <span class="dex-no">#471</span>
+    <span class="role">蛋</span>
+    <span class="region">神奧</span>
+    <a class="anchor" href="#glaceon" aria-label="冰伊布 的連結">#</a>
+  </div>
+  <div class="card-art">
+    <div class="stage" role="img" aria-label="Glaceon 動畫圖像"><span class="sp sp-i s13" style="background-image:url(/assets/pokemon/471/Idle.png)"></span><span class="sp sp-w s14" style="background-image:url(/assets/pokemon/471/Walk.png)"></span><span class="sp sp-si s13" style="background-image:url(/assets/pokemon/471/shiny/Idle.png)"></span><span class="sp sp-sw s14" style="background-image:url(/assets/pokemon/471/shiny/Walk.png)"></span></div>
+    <img class="portrait" src="/assets/pokemon/471/portrait.png" data-shiny-src="/assets/pokemon/471/shiny/portrait.png" width="80" height="80" loading="lazy" alt="冰伊布 頭像" />
+    <button class="shiny-btn" type="button" aria-pressed="false" aria-label="顯示異色 冰伊布" title="顯示異色 冰伊布">★</button>
+  </div>
+  <h2>冰伊布</h2>
+  <div class="types"><span class="type-badge" style="--type:#98d8d8">冰</span></div>
+  <p class="blurb">最終進化 · 適應力強。成長快速，有8種進化方式。</p>
+    <p class="note">從普通蛋孵化後即可使用。</p>
+    <h3>遊戲內能力值</h3>
+    <dl class="bars"><div><dt>生命值</dt><dd><span class="bar"><i style="width:45%"></i></span><b>145</b></dd></div><div><dt>攻擊</dt><dd><span class="bar"><i style="width:64%"></i></span><b>x1.25</b></dd></div><div><dt>防禦</dt><dd><span class="bar"><i style="width:3%"></i></span><b>0</b></dd></div><div><dt>速度</dt><dd><span class="bar"><i style="width:40%"></i></span><b>68</b></dd></div><div><dt>冷卻</dt><dd><span class="bar"><i style="width:33%"></i></span><b>x1.00</b></dd></div><div><dt>範圍</dt><dd><span class="bar"><i style="width:36%"></i></span><b>x1.10</b></dd></div><div><dt>回復</dt><dd><span class="bar"><i style="width:10%"></i></span><b>0.1/s</b></dd></div></dl>
+    <h3>進化路線</h3>
+    <ol class="evo"><li><a href="#eevee"><img src="/assets/pokemon/133/portrait.png" width="40" height="40" loading="lazy" alt="" />伊布</a></li><li class="evo-arrow">等級 20<br /><span aria-hidden="true">▶</span></li><li><a href="#vaporeon"><img src="/assets/pokemon/134/portrait.png" width="40" height="40" loading="lazy" alt="" />水伊布</a><a href="#jolteon"><img src="/assets/pokemon/135/portrait.png" width="40" height="40" loading="lazy" alt="" />雷伊布</a><a href="#flareon"><img src="/assets/pokemon/136/portrait.png" width="40" height="40" loading="lazy" alt="" />火伊布</a><a href="#espeon"><img src="/assets/pokemon/196/portrait.png" width="40" height="40" loading="lazy" alt="" />太陽伊布</a><a href="#umbreon"><img src="/assets/pokemon/197/portrait.png" width="40" height="40" loading="lazy" alt="" />月亮伊布</a><a href="#leafeon"><img src="/assets/pokemon/470/portrait.png" width="40" height="40" loading="lazy" alt="" />葉伊布</a><a href="#glaceon" aria-current="true"><img src="/assets/pokemon/471/portrait.png" width="40" height="40" loading="lazy" alt="" />冰伊布</a><a href="#sylveon"><img src="/assets/pokemon/700/portrait.png" width="40" height="40" loading="lazy" alt="" />仙子伊布</a></li></ol>
+    <h3>初始招式</h3>
+    <p class="move"><b>高速星星</b> <span class="type-badge" style="--type:#a8a878">一般</span><br />必定命中的追蹤星星。</p>
+    <h3>必殺技</h3>
+    <p class="move"><b>暴風雪</b> <span class="type-badge" style="--type:#98d8d8">冰</span><br />冰柱在你周圍落下，減緩敵人。</p>
+    <h3>可學招式</h3>
+    <dl class="learn"><dt>伊布 <small>一開始就會</small></dt><dd><ul class="chips"><li style="--type:#a8a878" title="一般">珍藏</li><li style="--type:#a8a878" title="一般">高速星星</li><li style="--type:#a8a878" title="一般">電光一閃</li><li style="--type:#705848" title="惡">咬碎</li><li style="--type:#a8a878" title="一般">自爆</li></ul></dd><dt>冰伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#705898" title="幽靈">禍不單行</li><li style="--type:#98d8d8" title="冰">冰礫</li><li style="--type:#98d8d8" title="冰">絕對零度</li><li style="--type:#6890f0" title="水">潮旋</li></ul></dd></dl>
+    <h3>特性</h3>
+    <ul class="list"><li><b>雪隱</b>: 下雪時：受到的傷害減少25%，且下雪不會削弱你。</li><li><b>撥雪</b>: 下雪時：速度+18、冷卻−8%，且下雪不會削弱你。</li><li><b>冰凍之軀</b> <small>(隱藏特性)</small>: 下雪時：每秒回復1.5 生命值，且下雪不會削弱你。</li></ul>
+    <p class="note">在第一次進化時選擇一個（不會進化的寶可夢在 等級 12 時選擇）。隱藏特性是原作中最稀有的。</p>
+    
+</article><article class="dex-card box role-egg" id="sylveon" data-region="kalos" data-types="fairy" data-roles="egg" data-search="sylveon 仙子伊布 700 700">
+  <div class="card-top">
+    <span class="dex-no">#700</span>
+    <span class="role">蛋</span>
+    <span class="region">卡洛斯</span>
+    <a class="anchor" href="#sylveon" aria-label="仙子伊布 的連結">#</a>
+  </div>
+  <div class="card-art">
+    <div class="stage" role="img" aria-label="Sylveon 動畫圖像"><span class="sp sp-i s15" style="background-image:url(/assets/pokemon/700/Idle.png)"></span><span class="sp sp-w s12" style="background-image:url(/assets/pokemon/700/Walk.png)"></span><span class="sp sp-si s15" style="background-image:url(/assets/pokemon/700/shiny/Idle.png)"></span><span class="sp sp-sw s12" style="background-image:url(/assets/pokemon/700/shiny/Walk.png)"></span></div>
+    <img class="portrait" src="/assets/pokemon/700/portrait.png" data-shiny-src="/assets/pokemon/700/shiny/portrait.png" width="80" height="80" loading="lazy" alt="仙子伊布 頭像" />
+    <button class="shiny-btn" type="button" aria-pressed="false" aria-label="顯示異色 仙子伊布" title="顯示異色 仙子伊布">★</button>
+  </div>
+  <h2>仙子伊布</h2>
+  <div class="types"><span class="type-badge" style="--type:#ee99ac">妖精</span></div>
+  <p class="blurb">最終進化 · 適應力強。成長快速，有8種進化方式。</p>
+    <p class="note">從普通蛋孵化後即可使用。</p>
+    <h3>遊戲內能力值</h3>
+    <dl class="bars"><div><dt>生命值</dt><dd><span class="bar"><i style="width:50%"></i></span><b>155</b></dd></div><div><dt>攻擊</dt><dd><span class="bar"><i style="width:54%"></i></span><b>x1.18</b></dd></div><div><dt>防禦</dt><dd><span class="bar"><i style="width:3%"></i></span><b>0</b></dd></div><div><dt>速度</dt><dd><span class="bar"><i style="width:40%"></i></span><b>68</b></dd></div><div><dt>冷卻</dt><dd><span class="bar"><i style="width:33%"></i></span><b>x1.00</b></dd></div><div><dt>範圍</dt><dd><span class="bar"><i style="width:27%"></i></span><b>x1.05</b></dd></div><div><dt>回復</dt><dd><span class="bar"><i style="width:50%"></i></span><b>0.8/s</b></dd></div></dl>
+    <h3>進化路線</h3>
+    <ol class="evo"><li><a href="#eevee"><img src="/assets/pokemon/133/portrait.png" width="40" height="40" loading="lazy" alt="" />伊布</a></li><li class="evo-arrow">等級 20<br /><span aria-hidden="true">▶</span></li><li><a href="#vaporeon"><img src="/assets/pokemon/134/portrait.png" width="40" height="40" loading="lazy" alt="" />水伊布</a><a href="#jolteon"><img src="/assets/pokemon/135/portrait.png" width="40" height="40" loading="lazy" alt="" />雷伊布</a><a href="#flareon"><img src="/assets/pokemon/136/portrait.png" width="40" height="40" loading="lazy" alt="" />火伊布</a><a href="#espeon"><img src="/assets/pokemon/196/portrait.png" width="40" height="40" loading="lazy" alt="" />太陽伊布</a><a href="#umbreon"><img src="/assets/pokemon/197/portrait.png" width="40" height="40" loading="lazy" alt="" />月亮伊布</a><a href="#leafeon"><img src="/assets/pokemon/470/portrait.png" width="40" height="40" loading="lazy" alt="" />葉伊布</a><a href="#glaceon"><img src="/assets/pokemon/471/portrait.png" width="40" height="40" loading="lazy" alt="" />冰伊布</a><a href="#sylveon" aria-current="true"><img src="/assets/pokemon/700/portrait.png" width="40" height="40" loading="lazy" alt="" />仙子伊布</a></li></ol>
+    <h3>初始招式</h3>
+    <p class="move"><b>高速星星</b> <span class="type-badge" style="--type:#a8a878">一般</span><br />必定命中的追蹤星星。</p>
+    <h3>必殺技</h3>
+    <p class="move"><b>破滅之光</b> <span class="type-badge" style="--type:#ee99ac">妖精</span><br />光束落在最近的敵人身上，可能使其睡著。</p>
+    <h3>可學招式</h3>
+    <dl class="learn"><dt>伊布 <small>一開始就會</small></dt><dd><ul class="chips"><li style="--type:#a8a878" title="一般">珍藏</li><li style="--type:#a8a878" title="一般">高速星星</li><li style="--type:#a8a878" title="一般">電光一閃</li><li style="--type:#705848" title="惡">咬碎</li><li style="--type:#a8a878" title="一般">自爆</li></ul></dd><dt>仙子伊布 <small>等級 20</small></dt><dd><ul class="chips"><li style="--type:#705898" title="幽靈">禍不單行</li><li style="--type:#ee99ac" title="妖精">魅惑之聲</li><li style="--type:#f85888" title="超能力">精神衝擊</li><li style="--type:#f85888" title="超能力">預知未來</li></ul></dd></dl>
+    <h3>特性</h3>
+    <ul class="list"><li><b>迷人之軀</b>: 接觸你的敵人可能陷入睡眠。</li><li><b>自然回復</b>: 每秒回復0.6 生命值。</li><li><b>妖精皮膚</b> <small>(隱藏特性)</small>: 一般屬性招式+30%、妖精屬性招式+15%。</li></ul>
+    <p class="note">在第一次進化時選擇一個（不會進化的寶可夢在 等級 12 時選擇）。隱藏特性是原作中最稀有的。</p>
+    
+</article></div>
+  <div class="doc-body narrow dex-page">
+    
+    <section class="box doc-section"><h2>常見問題</h2><h3>如何在 Pokémon Survivors 中解鎖 Eevee？</h3><p>孵化普通蛋。首領、上鎖的寶箱與裂縫有時會掉落蛋，蛋會靠你在對局中走的步數在孵化器裡孵化；Eevee 孵化後就永遠是你的了。</p><h3>Eevee 如何進化？</h3><p>在對局中隨等級提升進化：等級 20 進化成 Vaporeon、Jolteon、Flareon、Espeon、Umbreon、Leafeon、Glaceon或Sylveon。 部分型態需要進化道具，可在 Kecleon商店購買，或從首領身上取得。</p><h3>Eevee 的初始招式是什麼？</h3><p>Eevee 每場對局都以 Swift 開局，這是該家族的招牌招式。其他招式會隨著升級與進化取得。</p><h3>Eevee 在 Pokémon Survivors 裡強嗎？</h3><p>在根據玩家對局整理的強度排行中，Eevee 是 D 級：最近 30 天在普通難度的 262 場對局裡，有 43% 打倒了 超夢。</p></section>
+    <nav class="box doc-section dex-others" aria-label="其他可使用的寶可夢">
+    <h2>其他可使用的寶可夢</h2>
+    <h3>初始寶可夢</h3><p><a href="/zh-tw/pokedex/bulbasaur/">Bulbasaur</a> · <a href="/zh-tw/pokedex/charmander/">Charmander</a> · <a href="/zh-tw/pokedex/squirtle/">Squirtle</a> · <a href="/zh-tw/pokedex/chikorita/">Chikorita</a> · <a href="/zh-tw/pokedex/cyndaquil/">Cyndaquil</a> · <a href="/zh-tw/pokedex/totodile/">Totodile</a> · <a href="/zh-tw/pokedex/treecko/">Treecko</a> · <a href="/zh-tw/pokedex/torchic/">Torchic</a> · <a href="/zh-tw/pokedex/mudkip/">Mudkip</a> · <a href="/zh-tw/pokedex/turtwig/">Turtwig</a> · <a href="/zh-tw/pokedex/chimchar/">Chimchar</a> · <a href="/zh-tw/pokedex/piplup/">Piplup</a> · <a href="/zh-tw/pokedex/snivy/">Snivy</a> · <a href="/zh-tw/pokedex/tepig/">Tepig</a> · <a href="/zh-tw/pokedex/oshawott/">Oshawott</a> · <a href="/zh-tw/pokedex/chespin/">Chespin</a> · <a href="/zh-tw/pokedex/fennekin/">Fennekin</a> · <a href="/zh-tw/pokedex/froakie/">Froakie</a> · <a href="/zh-tw/pokedex/rowlet/">Rowlet</a> · <a href="/zh-tw/pokedex/litten/">Litten</a> · <a href="/zh-tw/pokedex/popplio/">Popplio</a> · <a href="/zh-tw/pokedex/grookey/">Grookey</a> · <a href="/zh-tw/pokedex/scorbunny/">Scorbunny</a> · <a href="/zh-tw/pokedex/sobble/">Sobble</a> · <a href="/zh-tw/pokedex/sprigatito/">Sprigatito</a> · <a href="/zh-tw/pokedex/fuecoco/">Fuecoco</a> · <a href="/zh-tw/pokedex/quaxly/">Quaxly</a></p><h3>蛋</h3><p><a href="/zh-tw/pokedex/pichu/">Pichu</a> · <a href="/zh-tw/pokedex/machop/">Machop</a> · <a href="/zh-tw/pokedex/eevee/" aria-current="page">Eevee</a> · <a href="/zh-tw/pokedex/togepi/">Togepi</a> · <a href="/zh-tw/pokedex/spheal/">Spheal</a> · <a href="/zh-tw/pokedex/starly/">Starly</a> · <a href="/zh-tw/pokedex/budew/">Budew</a> · <a href="/zh-tw/pokedex/rockruff/">Rockruff</a> · <a href="/zh-tw/pokedex/grubbin/">Grubbin</a> · <a href="/zh-tw/pokedex/pidgey/">Pidgey</a> · <a href="/zh-tw/pokedex/zubat/">Zubat</a> · <a href="/zh-tw/pokedex/poliwag/">Poliwag</a> · <a href="/zh-tw/pokedex/geodude/">Geodude</a> · <a href="/zh-tw/pokedex/roggenrola/">Roggenrola</a> · <a href="/zh-tw/pokedex/mareep/">Mareep</a> · <a href="/zh-tw/pokedex/shinx/">Shinx</a> · <a href="/zh-tw/pokedex/azurill/">Azurill</a> · <a href="/zh-tw/pokedex/shroomish/">Shroomish</a> · <a href="/zh-tw/pokedex/swinub/">Swinub</a> · <a href="/zh-tw/pokedex/snorunt/">Snorunt</a> · <a href="/zh-tw/pokedex/gastly/">Gastly</a> · <a href="/zh-tw/pokedex/abra/">Abra</a> · <a href="/zh-tw/pokedex/ralts/">Ralts</a> · <a href="/zh-tw/pokedex/riolu/">Riolu</a> · <a href="/zh-tw/pokedex/zorua/">Zorua</a> · <a href="/zh-tw/pokedex/larvesta/">Larvesta</a> · <a href="/zh-tw/pokedex/noibat/">Noibat</a> · <a href="/zh-tw/pokedex/honedge/">Honedge</a> · <a href="/zh-tw/pokedex/toxel/">Toxel</a> · <a href="/zh-tw/pokedex/tinkatink/">Tinkatink</a> · <a href="/zh-tw/pokedex/charcadet/">Charcadet</a> · <a href="/zh-tw/pokedex/growlithe/">Growlithe</a> · <a href="/zh-tw/pokedex/vulpix/">Vulpix</a> · <a href="/zh-tw/pokedex/cubone/">Cubone</a> · <a href="/zh-tw/pokedex/scyther/">Scyther</a> · <a href="/zh-tw/pokedex/magikarp/">Magikarp</a> · <a href="/zh-tw/pokedex/horsea/">Horsea</a> · <a href="/zh-tw/pokedex/kabuto/">Kabuto</a> · <a href="/zh-tw/pokedex/houndour/">Houndour</a> · <a href="/zh-tw/pokedex/teddiursa/">Teddiursa</a> · <a href="/zh-tw/pokedex/aron/">Aron</a> · <a href="/zh-tw/pokedex/trapinch/">Trapinch</a> · <a href="/zh-tw/pokedex/swablu/">Swablu</a> · <a href="/zh-tw/pokedex/electrike/">Electrike</a> · <a href="/zh-tw/pokedex/shuppet/">Shuppet</a> · <a href="/zh-tw/pokedex/dratini/">Dratini</a> · <a href="/zh-tw/pokedex/larvitar/">Larvitar</a> · <a href="/zh-tw/pokedex/beldum/">Beldum</a> · <a href="/zh-tw/pokedex/gible/">Gible</a> · <a href="/zh-tw/pokedex/dreepy/">Dreepy</a> · <a href="/zh-tw/pokedex/bagon/">Bagon</a> · <a href="/zh-tw/pokedex/slakoth/">Slakoth</a> · <a href="/zh-tw/pokedex/feebas/">Feebas</a> · <a href="/zh-tw/pokedex/deino/">Deino</a> · <a href="/zh-tw/pokedex/munchlax/">Munchlax</a> · <a href="/zh-tw/pokedex/litwick/">Litwick</a> · <a href="/zh-tw/pokedex/phantump/">Phantump</a> · <a href="/zh-tw/pokedex/drifloon/">Drifloon</a> · <a href="/zh-tw/pokedex/sandygast/">Sandygast</a> · <a href="/zh-tw/pokedex/porygon/">Porygon</a> · <a href="/zh-tw/pokedex/exeggcute/">Exeggcute</a> · <a href="/zh-tw/pokedex/scraggy/">Scraggy</a> · <a href="/zh-tw/pokedex/smeargle/">Smeargle</a></p><h3>傳說寶可夢</h3><p><a href="/zh-tw/pokedex/articuno/">Articuno</a> · <a href="/zh-tw/pokedex/zapdos/">Zapdos</a> · <a href="/zh-tw/pokedex/moltres/">Moltres</a> · <a href="/zh-tw/pokedex/raikou/">Raikou</a> · <a href="/zh-tw/pokedex/entei/">Entei</a> · <a href="/zh-tw/pokedex/suicune/">Suicune</a> · <a href="/zh-tw/pokedex/regirock/">Regirock</a> · <a href="/zh-tw/pokedex/regice/">Regice</a> · <a href="/zh-tw/pokedex/registeel/">Registeel</a> · <a href="/zh-tw/pokedex/mew/">Mew</a> · <a href="/zh-tw/pokedex/celebi/">Celebi</a> · <a href="/zh-tw/pokedex/jirachi/">Jirachi</a> · <a href="/zh-tw/pokedex/mewtwo/">Mewtwo</a> · <a href="/zh-tw/pokedex/lugia/">Lugia</a> · <a href="/zh-tw/pokedex/ho-oh/">Ho-Oh</a> · <a href="/zh-tw/pokedex/kyogre/">Kyogre</a> · <a href="/zh-tw/pokedex/groudon/">Groudon</a> · <a href="/zh-tw/pokedex/rayquaza/">Rayquaza</a> · <a href="/zh-tw/pokedex/dialga/">Dialga</a> · <a href="/zh-tw/pokedex/latias/">Latias</a> · <a href="/zh-tw/pokedex/latios/">Latios</a> · <a href="/zh-tw/pokedex/deoxys/">Deoxys</a> · <a href="/zh-tw/pokedex/arceus/">Arceus</a> · <a href="/zh-tw/pokedex/darkrai/">Darkrai</a></p>
+    <p><a class="btn-link" href="/zh-tw/pokedex/">★ 查看完整寶可夢圖鑑</a></p>
+  </nav>
+  </div>
+  </main>
+  <footer class="site-footer">
+    <p>Pokémon Survivors 是非官方、免費遊玩的粉絲自製遊戲，與 Nintendo、The Pokémon Company、GAME FREAK、Creatures 或 Spike Chunsoft 無關，也未經其背書、贊助或核准。Pokémon 及寶可夢角色名稱是 Nintendo 的商標。</p>
+    <p>Pokémon Survivors（pokemonsurvivors.com）不是 PokéSurvivor（pokesurvivor.com），後者是另一款名字相近的同人遊戲。 <a href="/zh-tw/pokemon-survivors-vs-pokesurvivor/">看看差別</a> · <a href="/zh-tw/pokemon-games-like-vampire-survivors/">其他像《吸血鬼倖存者》的寶可夢遊戲</a></p>
+    <p class="footer-links">
+      <a href="/zh-tw/legal/">法律與隱私</a>
+      <a href="https://github.com/pedrobarretto/pokemon-survivors/blob/main/CREDITS.md">製作名單</a>
+      <a href="https://github.com/pedrobarretto/pokemon-survivors">GitHub 原始碼</a>
+      <a href="https://www.tiktok.com/@pokemonsurvivors" rel="me">TikTok</a><a href="https://www.youtube.com/@PokemonSurvivors" rel="me">YouTube</a><a href="https://www.instagram.com/pokemonsurvivors/" rel="me">Instagram</a>
+      <a class="support-link" href="/zh-tw/support/">♥ 贊助本專案</a>
+    </p>
+  </footer>
+  </body>
+</html>
